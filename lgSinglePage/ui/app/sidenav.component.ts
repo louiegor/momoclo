@@ -11,17 +11,10 @@ import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms'
 })
 export class SideNavComponent  implements OnInit {
     form: FormGroup;
-    
-    // constructor(
-    //         private router: Router,
-    //         private route: ActivatedRoute,
-    //         private formBuilder: FormBuilder
-    // ){}
-    
+   
     constructor(private router: Router) { }
 
     goToMenu(url: any): void {
-        //let link = ['/detail', hero.id];
         this.router.navigate([url]);
     }
 
@@ -30,21 +23,3 @@ export class SideNavComponent  implements OnInit {
 
 }
 
-//  constructor(private router: Router) { }
-
-//     goToMenu(url: any): void {
-//         //let link = ['/detail', hero.id];
-//         this.router.navigate([url]);
-//     }
-
-// export class ContextMenuComponent
-//     form: FormGroup;
-
-//     constructor(
-//         private router: Router,
-//         private route: ActivatedRoute,
-//         private formBuilder: FormBuilder
-//     ) { }
-
-    
-// }

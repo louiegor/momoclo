@@ -1,0 +1,23 @@
+<div>
+    <div class="page-title">
+        <div class="title_left">
+            <h3>Deals</h3>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="table-responsive">
+                <!--<p-dataTable [value]="members" selectionMode="single" tableStyleClass="table table-striped jambo_table bulk_action" (onRowSelect)="onRowSelect($event)">-->
+                <p-dataTable [value]="members">
+                    <p-column field="id" header="id"></p-column>
+                    <p-column field="name" header="name"></p-column>
+                    <!--<p-column field="dealingRepName" header="Dealing Rep"></p-column>
+                    <p-column field="products" header="Products"></p-column>
+                    <p-column field="accounts" header="Accounts"></p-column>
+                    <p-column field="amounts" header="Amounts"></p-column>-->
+                </p-dataTable>
+            </div>
+        </div>
+    </div>
+</div>
